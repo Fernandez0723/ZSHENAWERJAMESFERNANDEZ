@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="att.OugzVrdP31juDLUcnNmhX57remN2YZ6OmdMZNDuiKzc-removebg-preview.png">
+    <title>Notre Dame of Dadiangas University</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <style>
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+            font-size: 1rem;
+            letter-spacing: 1px;
+        }
+        
+        footer p {
+            margin: 0;
+        }
+        
+        section {
+            padding: 200px 20px;
+            color: white;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin: 0;
+            border-radius: 8px;
+            transition: transform 0.5s ease-in-out;
+            text-align: center; 
+        }
+        
+        section:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.2);
+        }
+        
+        section h1, section h2 {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #ffeb3b;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+
+        section h1 {
+            font-size: 3.5rem;
+        }
+
+        section h2 {
+            font-size: 3rem;
+        }
+        
+        section p, section ul {
+            font-size: 1.25rem;
+            line-height: 1.7;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+            max-width: 800px;
+            margin: 0 auto;
+            color: #fff;
+        }
+
+        section ul {
+            text-align: left;
+            padding-left: 20px;
+        }
+        
+
+        #home {
+            background-image: url('att.vBoQiTmkI_rnqWEG4qi10EhGDpVIkumnthhyN7Xaluc.jpg');
+        }
+        
+        #about {
+            background-image: url('461402099_1053764056541961_8448412377840660596_n.jpg');
+        }
+        
+        #courses {
+            background-image: url('Slide-2-1024x556.png');
+        }
+        
+        #admissions {
+            background-image: url('glammang4-1200x600.jpg');
+        }
+        
+        #contact {
+            background-image: url('library-1200x600.jpg');
+        }
+
+        nav {
+            background-color: #222;
+            color: white;
+            padding: 15px 0;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        .navbar-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .navbar-left {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        
+        .navbar-left li {
+            margin: 0 15px;
+        }
+        
+        .navbar-left a {
+            color: #ffeb3b; 
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            letter-spacing: 1px;
+            transition: color 0.3s ease;
+        }
+        
+        .navbar-left a:hover {
+            color: #ffc107; 
+            text-decoration: underline;
+        }
+        
+        .navbar-right {
+            display: flex;
+            justify-content: flex-end;
+        }
+        
+        .logo {
+            height: 60px;
+            transition: transform 0.3s ease;
+        }
+        
+        .logo:hover {
+            transform: scale(1.1);
+        }
+        
+
+        @media screen and (max-width: 768px) {
+            .navbar-left {
+                flex-direction: column;
+                align-items: center;
+            }
+            .navbar-left li {
+                margin-bottom: 10px;
+            }
+        
+            section {
+                padding: 60px 20px;
+            }
+        
+            section h2 {
+                font-size: 2.5rem;
+            }
+        }
+        
+
+        button {
+            background-color: #ffeb3b;
+            color: #333;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 25px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        button:hover {
+            background-color: #ffc107;
+        }
+        
+
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body::-webkit-scrollbar {
+            width: 8px;
+        }
+        
+        body::-webkit-scrollbar-thumb {
+            background-color: #333;
+            border-radius: 4px;
+        }
+        
+        body::-webkit-scrollbar-track {
+            background: #f4f4f4;
+        }
+        
+
+        img:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease;
+        }
+    </style>
+
+
+    <nav>
+        <div class="navbar-container">
+            <ul class="navbar-left">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#admissions">Admissions</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="navbar-right">
+                <img src="th1-removebg-preview.png" alt="University Logo" class="logo">
+            </div>
+        </div>
+    </nav>
+
+
+    <section id="home">
+        <header>
+            <h1>Welcome to Notre Dame of Dadiangas University</h1>
+            <p>Your future starts here</p>
+        </header>
+        <p>Welcome to the homepage of our Notre Dame of Dadiangas University. Here, you'll find all the information you need about our academic programs, admissions process, and much more!</p>
+    </section>
+
+    <section id="about">
+        <header>
+            <h2>About Us</h2>
+        </header>
+        <p>Our University is dedicated to providing a world-class education in a variety of disciplines. We pride ourselves on fostering a diverse and inclusive campus environment.</p>
+    </section>
+
+    <section id="courses">
+        <header>
+            <h2>Courses</h2>
+        </header>
+        <p>We offer a wide range of undergraduate and graduate programs. Explore our courses and find the perfect program for your academic interests and career goals.</p>
+        <ul>
+            <li>Computer Science</li>
+            <li>Business Administration</li>
+            <li>Mechanical Engineering</li>
+            <li>Psychology</li>
+            <li>Law</li>
+        </ul>
+    </section>
+
+    <section id="admissions">
+        <header>
+            <h2>Admissions</h2>
+        </header>
+        <p>Interested in joining our university? Learn about our application process, deadlines, and requirements to start your journey with us.</p>
+        <ul>
+            <li>Application Process</li>
+            <li>Admission Requirements</li>
+            <li>Scholarships</li>
+            <li>Campus Tour</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <header>
+            <h2>Contact Us</h2>
+        </header>
+        <p>Have questions? Get in touch with us to learn more about our programs, admissions, or any other inquiries you may have.</p>
+        <p>Email: nddu@gmail.com</p>
+        <p>Phone: (639) 456-7890</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 University. All rights reserved.</p>
+    </footer>
+</body>
+</html>
